@@ -1,7 +1,7 @@
 {
-  "name": "shubhamsharma1004",
+  "name": "@shubhamsharma-10/resume",
   "version": "1.0.0",
-  "description": "Shubham Kumar Sharma's resume - Run 'npx shubhamsharma1004' to view it in your terminal",
+  "description": "Shubham Kumar Sharma's resume - Run 'npx @shubhamsharma-10/resume' to view it in your terminal",
   "main": "dist/index.js",
   "bin": {
     "shubhamsharma1004": "./dist/bin/index.js"
