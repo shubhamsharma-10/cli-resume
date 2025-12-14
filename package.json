@@ -1,17 +1,40 @@
 {
   "name": "shubhamsharma1004",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Shubham Kumar Sharma's resume - Run 'npx shubhamsharma1004' to view it in your terminal",
+  "main": "dist/index.js",
+  "bin": {
+    "shubhamsharma1004": "./dist/bin/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bin/index.js",
+    "dev": "tsc && node dist/bin/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "resume",
+    "cli",
+    "terminal",
+    "shubham",
+    "developer"
+  ],
+  "author": "Shubham Kumar Sharma <shubhamsharma10403@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shubhamsharma-10"
+  },
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.6.2"
+  },
   "devDependencies": {
-    "@types/node": "^25.0.2",
+    "@types/node": "^22.19.3",
     "typescript": "^5.9.3"
   }
 }
