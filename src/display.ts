@@ -1,4 +1,5 @@
 import chalk from 'chalk';
+import boxen from 'boxen';
 import { resume } from './resume.js';
 
 function createHeader(): string {       // header section with name and title
@@ -79,6 +80,14 @@ export function displayResume(): void {
         createFooter()
     ].join('');
 
+    const box = boxen(content, {
+        padding: 1,
+        margin: 1,
+        borderStyle: 'double',
+        borderColor: 'cyan',
+        title: '✨ RESUME ✨',
+        titleAlignment: 'center'
+    });
 
-    console.log(content);
+    console.log(box);
 }
